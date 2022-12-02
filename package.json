@@ -1,5 +1,5 @@
 {
-  "name": "mattapan-project",
+  "name": "mattapan-mapping-mapbox-react-typescript",
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
@@ -53,6 +53,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
+    "deploy": "git add . && git commit -m Build && git push",
     "tsc": "npx tsc --p tsconfig.json",
     "codegen": "graphql-codegen --config codegen.yml -r dotenv/config"
   },

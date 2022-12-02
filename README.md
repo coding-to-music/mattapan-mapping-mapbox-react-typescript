@@ -1,3 +1,35 @@
+# mattapan-mapping-mapbox-react-typescript
+
+# 🚀 Mattapan Mapping application. A collaborative between powerfulpathways.org & codeforboston.org . Ideation phase. 🚀
+
+https://github.com/coding-to-music/mattapan-mapping-mapbox-react-typescript
+
+https://mattapan-mapping-mapbox-react-typescript.vercel.app
+
+From / By https://github.com/codeforboston/mattapan-mapping
+
+https://codeforboston.github.io/mattapan-mapping-june2021/
+
+https://codeforboston.github.io/mattapan-mapping/ (says path not recognized)
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/mattapan-mapping-mapbox-react-typescript.git
+git push -u origin main
+```
+
 # Mattapan Mapping
 
 This is the repository dedicated to the creation, ongoing development and management of the Mattapan Mapping application. This project is a collaborative project between http://powerfulpathways.org and http://www.codeforboston.org.
