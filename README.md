@@ -15,6 +15,14 @@ https://codeforboston.github.io/mattapan-mapping/ (says path not recognized)
 ## Environment variables:
 
 ```java
+      name: 'mattapan-graphql-codegen',
+      url: process.env.REACT_APP_GRAPHQL_URI,
+
+if (process.env.NODE_ENV !== 'production') {
+  reportWebVitals(console.log);
+
+
+const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_ENV;
 
 ```
 
