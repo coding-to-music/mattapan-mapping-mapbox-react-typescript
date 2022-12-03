@@ -215,3 +215,46 @@ All great open source projects start with amazing documentation! :)
 Documentation describing the Mattapan Mapping application will be avaialble in this repo and at the following locations...
 
 ## External Resources
+
+## Error using Node 18 on Vercel, so need to use Node 16 instead
+
+```
+Creating an optimized production build...
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/vercel/path0/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/vercel/path0/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/vercel/path0/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /vercel/path0/node_modules/webpack/lib/NormalModule.js:503:5
+    at /vercel/path0/node_modules/webpack/lib/NormalModule.js:358:12
+    at /vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at runSyncOrAsync (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:130:11)
+    at iterateNormalLoaders (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:232:2)
+    at Array.<anonymous> (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:205:4)
+    at Storage.finished (/vercel/path0/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:55:16)
+    at /vercel/path0/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:91:9
+/vercel/path0/node_modules/react-scripts/scripts/build.js:19
+  throw err;
+  ^
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/vercel/path0/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/vercel/path0/node_modules/webpack/lib/NormalModule.js:417:16)
+    at /vercel/path0/node_modules/webpack/lib/NormalModule.js:452:10
+    at /vercel/path0/node_modules/webpack/lib/NormalModule.js:323:13
+    at /vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:367:11
+    at /vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:233:18
+    at context.callback (/vercel/path0/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /vercel/path0/node_modules/babel-loader/lib/index.js:59:103 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+Node.js v18.12.1
+```
