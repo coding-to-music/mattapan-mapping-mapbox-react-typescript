@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "deploy": "git add . && git commit -m Build && git push",
+    "tsc": "npx tsc --p tsconfig.json",
+    "codegen": "graphql-codegen --config codegen.yml -r dotenv/config"
+  },
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@emotion/react": "^11.4.1",
@@ -47,15 +56,6 @@
     "@graphql-codegen/typescript": "2.4.8",
     "@graphql-codegen/typescript-operations": "2.3.5",
     "@graphql-codegen/typescript-react-apollo": "3.2.11"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject",
-    "deploy": "git add . && git commit -m Build && git push",
-    "tsc": "npx tsc --p tsconfig.json",
-    "codegen": "graphql-codegen --config codegen.yml -r dotenv/config"
   },
   "eslintConfig": {
     "extends": [
